@@ -5,12 +5,6 @@
 
 
 // Define a struct RGBPixel para representar um pixel RGB
-typedef struct {
-    unsigned char r;
-    unsigned char g;
-    unsigned char b;
-} RGBPixel;
-
 // Função que lê um arquivo com uma imagem RGB e armazena seus pixels em um array
 // Retorna um ponteiro para o array de pixels
 // Parâmetros:
@@ -18,7 +12,7 @@ typedef struct {
 // - width: endereço onde a largura da imagem deverá ser armazenada
 // - height: endereço onde a altura da imagem deverá ser armazenada
 
-typedef struct {
+typedef struct RGBPixel{
     unsigned char r;
     unsigned char g;
     unsigned char b;
